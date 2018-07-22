@@ -549,6 +549,18 @@ footer p {
     margin-top: 20px;
 }
 
+.mobile-nav-icon{
+    float: right;
+    margin-top: 30px;
+    cursor: pointer;
+    display: none;
+}
+
+.mobile-nav-icon i {
+    font-size: 200%;
+    color: #fff;
+}
+
 @media only screen and (max-width: 1200px){
     .header__text-box{
         width: 100%;
@@ -602,6 +614,28 @@ footer p {
     }
 
     .header__nav {display: none;}
+    .mobile-nav-icon{display: inline-block;}
+
+    .header__nav{
+        float: left;
+        margin-top: 35px;
+        margin-left: 25px;
+    }
+    .header__nav li{display: block;}
+
+    .header__nav li a:link,
+    .header__nav li a:visited{
+        display: block;
+        border: 0;
+        padding: 10px 0;
+        font-size: 100%;
+    }
+
+    .sticky .header__nav {margin-top: 10px;}
+    .sticky .header__nav li a:link,
+    .sticky .header__nav li a:visited {padding: 10px 0;}
+    .sticky .mobile-nav-icon {margin-top: 10px;}
+    .sticky .mobile-nav-icon i {color: #555555;}
 
     .heading-primary {font-size: 180%;}
     .heading-secondary{font-size: 150%;}
@@ -629,3 +663,16 @@ footer p {
     .city-feature,
     .section-plans .row {text-align: center;}
 }
+
+.js--wp-1,
+.js--wp-2,
+.js--wp-3{
+    opacity: 0;
+}
+
+.js--wp-1.animated,
+.js--wp-2.animated,
+.js--wp-3.animated {
+    opacity: 1;
+}
+
